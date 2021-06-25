@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab</title>
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            display: inline-block;
+            width: 300.52px;
+            height: 40px;
+            background-color: #55585a;
+            font: 14px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            /* text-indent: 2em; */
+            line-height: 40px;  
+            /* 让文字的高度即行高line-height等于盒子a的高度height，这样就能使文字在当前盒子内垂直居中了 */
+            font-weight: 700; /*font-weight后无单位，400时为正常值，700则为默认加粗。*/
+        }
+        a:hover{
+            background-color: #ff6700;
+        }
+        .nav{
+            background: rgba(0, 0, 0, 0.671);
+            width: 1830px;
+        }
+        /* 输入.nav后，按Tab键会进行快速补全，形成<div class=".nav"></div> */
+
+        .image{
+            width: 1810px;
+            height: 1000px;
+            background-image: url(gene.jpg);
+            background-position: center top;
+            background-attachment: fixed;
+            color: yellow;
+            font-size: 20px;
+            padding: 2px 10px;
+        }
+        .left{
+            width: 300px;
+            height: 200px;
+            /* border: #ff6700 solid 5px; */
+            background-color: gray;
+            float: left;
+            margin-right: 10px;
+        }
+        .right{
+            width: 1470px;
+            height: 200px;
+            /* border: #ff6700 solid 5px; */
+            background-color: gray;
+            float: left;
+            margin-right: 10px;
+        }
+        .boxlist{
+            
+            background-color: gray;
+            float: left;
+            width: 1300px;
+            height: 456px;
+            margin: 10px 300px; /*为什么auto不能进行左右自动居中对齐呢？？？*/
+        }
+        .boxlist ul li{
+            list-style: none;
+        }
+        .boxlist ul li{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            margin-right: 10px;
+        } 
+        .boxlist .last{margin-right: 0;}
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">首页</a>
+        <a href="#">导师介绍</a>
+        <a href="#">研究方向</a>
+        <a href="#">科研成果</a>
+        <a href="#">组员介绍</a>
+        <a href="#">加入我们</a>
+    </div>
+   
+    <div class="image">
+        <h1 style="text-align: center; font-size: 50px; color: #ff6700;">join us!</h1>  
+         <!-- #当font-weight: 400时，表示的默认意思就是不加粗。 -->
+         <div class="left">
+
+        </div>
+        <div class="right">
+        
+
+        </div>
+        <div class="boxlist">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li class="last">4</li>
+            </ul>
+        </div>
+      
+        
+       
+    
+</body>
+</html>
