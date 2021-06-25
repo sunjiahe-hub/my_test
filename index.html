@@ -24,8 +24,8 @@
             </ul>
         </div>
         <div class="search">
-            <input type="text" value="请输入关键词">
-            <button>search</button>
+            <input type="text" placeholder="请输入关键词" readonly >
+            <button disabled >search</button>
         </div>
     </div>
 
@@ -71,7 +71,80 @@
         </ul>
         
     </div>
-    
-    
 </body>
 </html>
+<script>
+
+// 作用域 作用域链   函数作用域
+
+
+// 基本数据类型
+
+// 栈内存
+
+let a = 0; 
+
+a = "0";
+
+a = true;
+
+a = undefined;
+
+a = null;
+
+a = 15n;
+
+a = Symbol();
+
+// 引用数据类型
+
+// 堆内存
+a = function () {
+
+}
+
+a = []
+
+
+
+
+a = 46
+
+
+let b = a;
+let c = b;
+
+console.log(b)
+
+
+// 垃圾回收
+a = null;
+
+console.log(a)
+
+
+// 闭包
+
+function fffff() {
+    let num = 1
+    let count = 1
+
+    return function fsadi(index) {
+        num  =  num + index
+        count
+        console.log(num)
+    }
+}
+
+let d = fffff();
+console.dir(d)
+
+d(10)
+d(-3)
+d(45)
+d(-45)
+d(1)
+
+
+
+</script>
